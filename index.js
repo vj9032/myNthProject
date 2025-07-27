@@ -16,8 +16,7 @@ function addElementSlowly(s){
             
         } , 1000+ i*200)
     }
-    let totalTime = 1000 + s.length*200
-    return totalTime 
+
 }
 
 function removeElementSlowly(ele){
@@ -33,9 +32,21 @@ function removeElementSlowly(ele){
        
 }
 
+let aniStr = "venkat jayanth yelemanchili"
+totalTime = 1000+ aniStr.length*200
 
-let theTime =  addElementSlowly("helloWorld");
-console.log(theTime)
+
+addElementSlowly(aniStr);
 setTimeout(() => {
   removeElementSlowly(theName);
-}, theTime);
+}, totalTime);
+
+
+setInterval(()=>{
+addElementSlowly(aniStr);
+setTimeout(() => {
+  removeElementSlowly(theName);
+}, totalTime);
+
+} , totalTime*2 )
+

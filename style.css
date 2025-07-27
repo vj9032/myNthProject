@@ -1,7 +1,10 @@
 body{
     background-color: green;
+    margin: 0 auto;
 }
 
 .name{
     color: black;
+    /* display: inline; */
+    text-align: center;
 }
