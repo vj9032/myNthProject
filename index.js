@@ -10,8 +10,11 @@ function addElementSlowly(s){
             }
             else{
                 theName.innerText += s[i]
-
             }
+            redd = Math.floor((Math.random()*256))
+            greenn = Math.floor((Math.random()*256))
+            bluee = Math.floor((Math.random()*256))
+            theName.style.color = `rgb(${redd},${greenn},${bluee})`
             
             
         } , 1000+ i*200)
@@ -26,7 +29,12 @@ function removeElementSlowly(ele){
         setTimeout(()=>{
             inText = inText.slice(0 ,-1);
             ele.innerText = inText;
+            redd = Math.floor((Math.random()*256))
+            greenn = Math.floor((Math.random()*256))
+            bluee = Math.floor((Math.random()*256))
+            theName.style.color = `rgb(${redd},${greenn},${bluee})`
         } , 1000 + i*200);
+        
         
     }
        

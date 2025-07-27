@@ -1,10 +1,12 @@
 body{
-    background-color: green;
+    background-color: black;
     margin: 0 auto;
 }
 
 .name{
     color: black;
+    letter-spacing: 1rem;
     /* display: inline; */
     text-align: center;
+    background-color: black;
 }
